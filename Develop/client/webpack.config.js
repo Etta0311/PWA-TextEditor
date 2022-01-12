@@ -13,9 +13,6 @@ module.exports = () => {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
-    devServer: {
-      hot: 'only',
-    },
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
@@ -35,6 +32,7 @@ module.exports = () => {
         theme_color: '#225ca3',
         start_url: '/',
         publicPath: '/',
+        crossorigin: 'use-credentials',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -61,7 +59,7 @@ module.exports = () => {
         },
         {
           test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
             options: {
