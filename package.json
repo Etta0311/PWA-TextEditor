@@ -4,7 +4,8 @@
   "description": "<img alt=\"GitHub Followers\" src=\"https://img.shields.io/github/followers/Etta0311\"> <img alt=\"GitHub License\" src=\"https://img.shields.io/apm/l/vim-mode\">  <img alt=\"GitHub Language Count\" src=\"https://img.shields.io/github/languages/count/Etta0311/PWA-TextEditor\">  <img alt=\"GitHub Commit Activity\" src=\"https://img.shields.io/github/commit-activity/w/Etta0311/PWA-TextEditor\">",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && cd server && node server.js"
   },
   "repository": {
     "type": "git",
